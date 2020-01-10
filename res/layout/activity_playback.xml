@@ -1,0 +1,18 @@
+<RelativeLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout android:id="@+id/layout_video" android:layout_width="fill_parent" android:layout_height="200.0dip">
+	    <net.babelstar.common.play.VideoView
+	        android:id="@+id/imageView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentBottom="true" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_below="@id/layout_video">
+	    <Button android:textSize="18.0sp" android:id="@+id/btnStart"
+	        android:layout_width="90.0dip" android:layout_height="40.0dip"
+	        android:singleLine="true" android:text="Start" />
+	    <Button android:textSize="18.0sp" android:id="@+id/btnStop"
+	        android:layout_width="90.0dip" android:layout_height="40.0dip"
+	        android:singleLine="true" android:text="Stop" android:layout_toRightOf="@id/btnStart"/>
+	</RelativeLayout>
+</RelativeLayout>

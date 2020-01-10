@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  	<RelativeLayout android:id="@+id/lyPlaybackItem_lyBody" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+	    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		    <ImageView android:layout_gravity="center_vertical" android:id="@+id/lyPlaybackItem_imgSnapshot" android:layout_width="70.0dip" android:layout_height="50.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+		   	<LinearLayout android:orientation="vertical" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/lyPlaybackItem_imgSnapshot" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+		        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		            <TextView android:id="@+id/lyPlaybackItem_tvTime" android:textSize="12.0sp" android:textColor="@color/blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0px" />
+		        </LinearLayout>
+		        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		            <TextView android:id="@+id/lyPlaybackItem_tvType" android:textSize="12.0sp" android:textColor="@color/blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0px" />
+		        </LinearLayout>
+		    </LinearLayout>
+		    <ImageButton android:id="@+id/lyPlaybackItem_play" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+	    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

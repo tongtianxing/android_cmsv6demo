@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip" android:id="@+id/ly_control">
+	    <Button android:textSize="18.0sp" android:id="@+id/btnStart"
+	        android:layout_width="90.0dip" android:layout_height="40.0dip"
+	        android:singleLine="true" android:text="Start" />
+	    <Button android:textSize="18.0sp" android:id="@+id/btnStop"
+	        android:layout_width="90.0dip" android:layout_height="40.0dip"
+	        android:singleLine="true" android:text="Stop" android:layout_toRightOf="@id/btnStart"/>
+	    <TextView android:textSize="18.0sp" android:id="@+id/tvStatus"
+	        android:layout_width="90.0dip" android:layout_height="40.0dip"
+	        android:singleLine="true" android:text="Status" android:layout_toRightOf="@id/btnStop"/>
+	</RelativeLayout>
+    <ListView android:id="@+id/lv_record" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ly_control"/>          
+</RelativeLayout>

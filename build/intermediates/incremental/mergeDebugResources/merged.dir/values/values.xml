@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="CloseButtonBG"/>
+    <attr format="reference" name="OpenButtonBG"/>
+    <attr format="color" name="backgroundColor"/>
+    <attr format="integer" name="backgroundTransparent"/>
+    <attr format="reference" name="leftBackground"/>
+    <attr format="reference|string" name="leftButtonTag"/>
+    <attr format="integer" name="maxYear"/>
+    <attr format="integer" name="minYear"/>
+    <attr format="reference" name="rightBackground"/>
+    <attr format="reference|string" name="rightButtonTag"/>
+    <attr format="color" name="textColor"/>
+    <attr format="dimension" name="titleBarHeight"/>
+    <attr format="string" name="titleText"/>
+    <color name="background_color">#ffeaf1f9</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff576b95</color>
+    <color name="color_divider">#ffdddddd</color>
+    <color name="gray1">#ffaaaaaa</color>
+    <color name="gray2">#ff999999</color>
+    <color name="gray3">#ffbbbbbb</color>
+    <color name="gray4">#ff666666</color>
+    <color name="gray5">#ff333333</color>
+    <color name="gray6">#fff2f2f2</color>
+    <color name="gray7">#ffdedede</color>
+    <color name="green">#ff95af46</color>
+    <color name="list_bg">#fff2f2f2</color>
+    <color name="list_text_color">#ff388ce4</color>
+    <color name="red">#ffff0000</color>
+    <color name="text">#ff388ce4</color>
+    <color name="title">#ff4c5366</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="yellow">#fff4982f</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_item_text_size">20.0dip</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">CMSV6Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="Theme" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.CustomTitleBar" parent="@style/Theme">
+        <item name="titleBarHeight">45.0dip</item>
+    </style>
+    <style name="Theme.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.FullScreen" parent="@style/Theme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="textview">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+</resources>

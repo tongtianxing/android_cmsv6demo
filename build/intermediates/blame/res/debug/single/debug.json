@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_pic_error_net_bad.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-hdpi\\pic_error_net_bad.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_activity_playback.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\activity_playback.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_input_shade_white.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\input_shade_white.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_custommenu_pressed_selector.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\custommenu_pressed_selector.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_devsearch_list_item.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\devsearch_list_item.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_activity_preview.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\activity_preview.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_my_progress_drawable.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\my_progress_drawable.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_devsearch_list.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\devsearch_list.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_mainsetting_dialog_frame.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\mainsetting_dialog_frame.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_list_refresh.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-hdpi\\list_refresh.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_custom_menu.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\custom_menu.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_activity_record.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\activity_record.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_custom_menu_item.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\custom_menu_item.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_grid_bg.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\grid_bg.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_playback_list_item.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\playback_list_item.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_title_bk.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\title_bk.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_device_live.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\device_live.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_list_nodata.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-hdpi\\list_nodata.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_list_content.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\list_content.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_cam_default.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\cam_default.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_bg_item_selector.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\bg_item_selector.xml"
+    }
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="CloseButtonBG" format="reference" />
+    <attr name="OpenButtonBG" format="reference" />
+    <attr name="minYear" format="integer" />
+    <attr name="maxYear" format="integer" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="textColor" format="color" />
+    <attr name="backgroundTransparent" format="integer" />
+    <attr name="titleBarHeight" format="dimension" />
+    <attr name="titleText" format="string" />
+    <attr name="leftBackground" format="reference" />
+    <attr name="rightBackground" format="reference" />
+    <attr name="leftButtonTag" format="reference|string" />
+    <attr name="rightButtonTag" format="reference|string" />
+</resources>

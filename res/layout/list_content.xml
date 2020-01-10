@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/lyListContent_lyContent" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+	<ProgressBar android:id="@+id/lyListContent_waitting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/my_progress_drawable" android:layout_centerInParent="true" />
+	<TextView android:id="@+id/lyListContent_tvLoadTip" android:layout_below="@id/lyListContent_waitting" android:visibility="invisible" android:layout_centerHorizontal="true" android:textSize="@dimen/list_item_text_size" android:textColor="@color/list_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@null" />
+	<ListView android:id="@+id/lyListContent_listView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+         android:cacheColorHint="@android:color/transparent" android:divider="@color/text" android:dividerHeight="1px"/>
+	<RelativeLayout android:id="@+id/lyListContent_lyNull" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" >
+		<ImageView android:id="@+id/lyListContent_ivNull" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_nodata" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+		<TextView android:id="@+id/lyListContent_tvNull" android:layout_below="@id/lyListContent_ivNull" android:textSize="@dimen/list_item_text_size" android:textColor="@color/list_text_color" android:layout_centerHorizontal="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@null" />
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/lyListContent_lyError" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" >
+		<ImageView android:id="@+id/lyListContent_ivError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_error_net_bad"  android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+		<TextView android:id="@+id/lyListContent_tvError" android:layout_below="@id/lyListContent_ivError" android:textColor="@color/list_text_color" android:textSize="@dimen/list_item_text_size" android:layout_centerHorizontal="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@null" />
+		<LinearLayout android:id="@+id/lyListContent_lyReflash" android:layout_below="@id/lyListContent_tvError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" >
+			<ImageView android:id="@+id/lyListContent_ivReflash" android:background="@drawable/list_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0px" android:contentDescription="@null"/>
+		    <TextView android:id="@+id/lyListContent_tvReflash" android:textSize="@dimen/list_item_text_size" android:textColor="@color/list_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="刷新" />
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:1-48:12
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:1-48:12
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:1-48:12
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:1-48:12
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:1-48:12
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:1-48:12
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:3:5-28
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:5:5-30
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:4:5-28
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+application
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:10:5-44:19
+	android:label
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:13:9-45
+	android:allowBackup
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:15:9-40
+activity#com.cmsv6demo.MainActivity
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:16:9-23:20
+	android:label
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:17:13-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:21:27-74
+activity#com.cmsv6demo.RecordActivity
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:24:9-27:20
+	android:label
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:26:13-45
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:25:13-56
+activity#com.cmsv6demo.PlaybackActivity
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:28:9-31:20
+	android:label
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:30:12-44
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:29:12-57
+activity#com.cmsv6demo.DeviceSearchActivity
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:33:9-36:20
+	android:label
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:35:12-44
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:34:12-61
+activity#com.cmsv6demo.PreviewActivity
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:38:9-41:20
+	android:label
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:40:13-45
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:39:13-57
+meta-data#android.max_aspect
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:43:9-75
+	android:value
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:43:54-73
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:43:20-53
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:45:2-78
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:45:19-75
+uses-permission#android.permission.INTERNET
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:46:5-67
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:46:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:47:5-71
+	android:name
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml:47:22-68
+uses-sdk
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+		ADDED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml
+		INJECTED from E:\project\mobile\androidstudio\Android_cmsv6demo\AndroidManifest.xml

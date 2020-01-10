@@ -1,0 +1,96 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "2,3,6,8,11,13,5,4,12,14,7,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "57,111,256,354,516,627,210,164,571,688,308,414,469",
+                        "endColumns": "52,51,50,58,53,59,44,44,54,60,44,53,45",
+                        "endOffsets": "105,158,302,408,565,682,250,204,621,744,348,463,510"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,158,208,266,319,378,422,466,520,580,624,677",
+                        "endColumns": "51,50,49,57,52,58,43,43,53,59,43,52,44",
+                        "endOffsets": "102,153,203,261,314,373,417,461,515,575,619,672,717"
+                    }
+                },
+                {
+                    "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15,19,25,28,22,36",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "191,522,687,945,1074,813,1535",
+                        "endLines": "12,17,21,27,35,24,39",
+                        "endColumns": "12,12,12,12,12,12,12",
+                        "endOffsets": "481,679,807,1068,1529,939,1682"
+                    },
+                    "to": {
+                        "startLines": "41,48,51,54,57,65,68",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "1917,2208,2368,2491,2617,3070,3199",
+                        "endLines": "47,50,53,56,64,67,71",
+                        "endColumns": "12,12,12,12,12,12,12",
+                        "endOffsets": "2203,2363,2486,2612,3065,3194,3343"
+                    }
+                },
+                {
+                    "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,1",
+                        "startOffsets": "92,151,205",
+                        "endColumns": "57,55,50",
+                        "endOffsets": "145,202,254"
+                    },
+                    "to": {
+                        "startLines": "35,36,37",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1596,1654,1710",
+                        "endColumns": "57,55,53",
+                        "endOffsets": "1649,1705,1759"
+                    }
+                },
+                {
+                    "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "16,3,5,21,9,10,11,12,13,14,15,8,20,17,2,18,19,6,4,7",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "663,98,184,900,362,405,448,491,534,577,620,319,855,717,57,770,812,226,141,275",
+                        "endColumns": "52,41,40,49,41,41,41,41,41,41,41,41,43,51,39,40,41,47,41,42",
+                        "endOffsets": "711,135,220,945,399,442,485,528,571,614,657,356,894,764,92,806,849,269,178,313"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "722,775,817,858,908,950,992,1034,1076,1118,1160,1202,1244,1288,1340,1380,1421,1463,1511,1553",
+                        "endColumns": "52,41,40,49,41,41,41,41,41,41,41,41,43,51,39,40,41,47,41,42",
+                        "endOffsets": "770,812,853,903,945,987,1029,1071,1113,1155,1197,1239,1283,1335,1375,1416,1458,1506,1548,1591"
+                    }
+                },
+                {
+                    "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,2,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "104,56,158",
+                        "endColumns": "52,46,52",
+                        "endOffsets": "152,98,206"
+                    },
+                    "to": {
+                        "startLines": "38,39,40",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1764,1817,1864",
+                        "endColumns": "52,46,52",
+                        "endOffsets": "1812,1859,1912"
+                    }
+                }
+            ]
+        }
+    ]
+}

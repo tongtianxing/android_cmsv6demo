@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	<RelativeLayout android:id="@+id/lySearchItem_lyBody" android:orientation="vertical" android:background="@drawable/input_shade_white" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="3.0dip" >
+	    <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+		    <ImageView android:layout_gravity="center_vertical" android:id="@+id/lySearchItem_imgSnapshot" android:background="@drawable/cam_default" android:layout_width="70.0dip" android:layout_height="50.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip"
+		         android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@android:string/ok"/>
+		   	<LinearLayout android:orientation="vertical" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/lySearchItem_imgSnapshot" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+		        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		            <TextView android:id="@+id/lySearchItem_tvLabelIdno" android:textSize="12.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编号:" />
+		            <TextView android:id="@+id/lySearchItem_tvIdno" android:textSize="12.0sp" android:textColor="@color/blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0px" />
+		        </LinearLayout>
+		        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		            <TextView android:id="@+id/lySearchItem_tvNetName" android:textSize="12.0sp" android:textColor="@color/blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0px" />
+		        </LinearLayout>
+		    </LinearLayout>
+		    <ImageButton android:id="@+id/lySearchItem_add" android:background="@drawable/device_live" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@android:string/ok"/>
+	    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+#Fri Jan 10 16:35:38 CST 2020
+base.0=E\:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex
