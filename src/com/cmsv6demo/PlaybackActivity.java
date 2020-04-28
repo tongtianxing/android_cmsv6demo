@@ -69,7 +69,6 @@ public class PlaybackActivity extends Activity {
 	
 	protected void StartPlayback() {
 		if (!mIsPlaying) {
-
 			Intent intent = getIntent();
 			byte[] file = intent.getByteArrayExtra("File");
 			int nLength = intent.getIntExtra("Length", 0);
