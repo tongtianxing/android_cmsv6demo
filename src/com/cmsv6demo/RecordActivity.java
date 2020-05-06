@@ -53,7 +53,9 @@ public class RecordActivity extends Activity {
             	Intent intent = new Intent(); 
 				intent.putExtra("DevIDNO", mDevIdno); 
 				intent.putExtra("File", mFileList.get(arg2).getOrginalFile()); 
-				intent.putExtra("Length", mFileList.get(arg2).getOrginalLen()); 
+				intent.putExtra("Length", mFileList.get(arg2).getOrginalLen());
+				intent.putExtra("Channel", mFileList.get(arg2).getChn());
+
 				intent.setClass(RecordActivity.this, PlaybackActivity.class);
 				startActivityForResult(intent, 0);
             }  
@@ -171,6 +173,13 @@ public class RecordActivity extends Activity {
 						search.setFileType(Integer.parseInt(info[index ++]));
 						search.setLocation(Integer.parseInt(info[index ++]));
 						search.setSvrId(Integer.parseInt(info[index ++]));
+
+						search.setChnMask(Integer.parseInt(info[index ++]));
+						search.setAlarmInfo(Integer.parseInt(info[index ++]));
+						search.setFileOffset(Integer.parseInt(info[index ++]));
+						search.setRecording(Integer.parseInt(info[index ++]) > 0 ? true : false);
+						search.setStream(Integer.parseInt(info[index ++]) > 0 ? true : false);
+
 						search.setIsPlaying(false);
 						
 						mFileList.add(search);

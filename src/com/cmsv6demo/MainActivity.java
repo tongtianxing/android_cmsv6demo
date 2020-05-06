@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 //import android.os.Environment;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -98,10 +99,11 @@ public class MainActivity extends Activity {
         mEtServer.setText(server);
         String devIdno = mPreferences.getString("DevIDNO", "50003");
         //devIdno = "100012";
-        devIdno = "30008";
-       	mEtDevIdno.setText(devIdno);       
-		NetClient.Initialize("/mnt/sdcard/");
-		
+        devIdno = "1423";
+       	mEtDevIdno.setText(devIdno);
+        String sdPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/";
+//		NetClient.Initialize("/mnt/sdcard/");
+        NetClient.Initialize(sdPath);
 		if (!updateServer()) {
 			return ;
 		}

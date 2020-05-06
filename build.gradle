@@ -27,7 +27,7 @@ android {
 
         applicationId "com.cmsv6demo"//应用程序的包名
 
-        minSdkVersion 9//支持的最低版本
+        minSdkVersion 14//支持的最低版本
 
         targetSdkVersion 28//支持的目标版本
 
@@ -35,6 +35,10 @@ android {
 
         versionName "1.0.1"//版本名
 
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
     }
     sourceSets {
         main {

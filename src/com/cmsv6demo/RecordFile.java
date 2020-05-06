@@ -21,7 +21,62 @@ public class RecordFile {
 	Integer location;
 	Integer svrId;
 	Boolean isPlaying;
-	
+
+	Integer chnMask;
+	Boolean stream;
+
+	public Boolean getPlaying() {
+		return isPlaying;
+	}
+
+	public void setPlaying(Boolean playing) {
+		isPlaying = playing;
+	}
+
+	public Integer getChnMask() {
+		return chnMask;
+	}
+
+	public void setChnMask(Integer chnMask) {
+		this.chnMask = chnMask;
+	}
+
+	public Boolean getStream() {
+		return stream;
+	}
+
+	public void setStream(Boolean stream) {
+		this.stream = stream;
+	}
+
+	public Boolean getRecording() {
+		return recording;
+	}
+
+	public void setRecording(Boolean recording) {
+		this.recording = recording;
+	}
+
+	public Integer getFileOffset() {
+		return fileOffset;
+	}
+
+	public void setFileOffset(Integer fileOffset) {
+		this.fileOffset = fileOffset;
+	}
+
+	public Integer getAlarmInfo() {
+		return alarmInfo;
+	}
+
+	public void setAlarmInfo(Integer alarmInfo) {
+		this.alarmInfo = alarmInfo;
+	}
+
+	Boolean recording;
+	Integer fileOffset;
+	Integer alarmInfo;
+
 	public String getDevIdno() {
 		return devIdno;
 	}
@@ -137,5 +192,26 @@ public class RecordFile {
 		} else {
 			return "Alarm";
 		}
+	}
+
+	public int getChnCountByMask() {
+		int nCount = 0;
+		//chn:0 chnMask > 0 这种情况需要考虑
+		if(chnMask > 0){
+			for (int i = 0; i < 32; ++ i) {
+				if ( ((chnMask>>i) & 0x01) > 0 ) {
+					nCount ++;
+				}
+			}
+		}
+//		for (int i = 0; i < chn; ++ i) {
+//			if ( ((chnMask>>i) & 0x01) > 0 ) {
+//				nCount ++;
+//			}
+//		}
+		if (nCount <= 0) {
+			nCount = 1;
+		}
+		return nCount;
 	}
 }

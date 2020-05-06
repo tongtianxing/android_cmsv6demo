@@ -7,11 +7,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 //import android.util.DisplayMetrics;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-//import android.view.ViewGroup.LayoutParams;
+import android.view.ViewGroup.LayoutParams;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class PlaybackActivity extends Activity {
 	private boolean mIsPlaying = false;
@@ -28,11 +31,15 @@ public class PlaybackActivity extends Activity {
 		
 		setContentView(R.layout.activity_playback);
 		
-//		DisplayMetrics dm = new DisplayMetrics();
-//		getWindowManager().getDefaultDisplay().getMetrics(dm);
-//		int screenWidth = dm.widthPixels;
-//		int picHeight = screenWidth / 4 * 3;
+		DisplayMetrics dm = new DisplayMetrics();
+		getWindowManager().getDefaultDisplay().getMetrics(dm);
+		int screenWidth = dm.widthPixels;
+		int picHeight = screenWidth / 4 * 3;
 		mVideoView = (VideoView) findViewById(R.id.imageView1);
+		LayoutParams para = mVideoView.getLayoutParams();
+		para.width = screenWidth;
+		para.height = picHeight;
+		mVideoView.setLayoutParams(para);
 //		LayoutParams para = mVideoView.getLayoutParams();
 //		para.width = screenWidth;
 //		para.height = picHeight;

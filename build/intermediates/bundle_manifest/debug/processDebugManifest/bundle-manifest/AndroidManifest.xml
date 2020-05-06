@@ -17,7 +17,6 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.cmsv6demo.MainActivity"
@@ -48,11 +47,6 @@
         <meta-data
             android:name="android.max_aspect"
             android:value="2.1" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.cmsv6demo.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>
