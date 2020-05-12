@@ -5,7 +5,7 @@
     android:versionName="1.0.1" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="11"
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -17,6 +17,7 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.cmsv6demo.MainActivity"
@@ -40,6 +41,10 @@
             android:label="@string/app_name" >
         </activity>
         <activity
+            android:name="com.cmsv6demo.MainDirectActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name="com.cmsv6demo.PreviewActivity"
             android:label="@string/app_name" >
         </activity>
@@ -47,6 +52,11 @@
         <meta-data
             android:name="android.max_aspect"
             android:value="2.1" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.cmsv6demo.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

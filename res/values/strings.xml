@@ -3,4 +3,7 @@
     <string name="app_name">CMSV6Demo</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="toolbar_video">video</string>
+    <string name="toolbar_playback">playback</string>
+
 </resources>

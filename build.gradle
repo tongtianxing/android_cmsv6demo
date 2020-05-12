@@ -16,6 +16,7 @@ allprojects {
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
+
 }
 
 android {
@@ -27,7 +28,7 @@ android {
 
         applicationId "com.cmsv6demo"//应用程序的包名
 
-        minSdkVersion 14//支持的最低版本
+        minSdkVersion 11//支持的最低版本
 
         targetSdkVersion 28//支持的目标版本
 

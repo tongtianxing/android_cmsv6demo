@@ -34,7 +34,11 @@
            android:name="com.cmsv6demo.DeviceSearchActivity"
            android:label="@string/app_name" >
         </activity>
-         
+
+        <activity
+            android:name="com.cmsv6demo.MainDirectActivity"
+            android:label="@string/app_name">
+        </activity>
         <activity
             android:name="com.cmsv6demo.PreviewActivity"
             android:label="@string/app_name">

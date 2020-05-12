@@ -31,12 +31,12 @@
                         "endOffsets": "481,679,807,1068,1529,939,1682"
                     },
                     "to": {
-                        "startLines": "41,48,51,54,57,65,68",
+                        "startLines": "43,50,53,56,59,67,70",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "1917,2208,2368,2491,2617,3070,3199",
-                        "endLines": "47,50,53,56,64,67,71",
+                        "startOffsets": "2019,2310,2470,2593,2719,3172,3301",
+                        "endLines": "49,52,55,58,66,69,73",
                         "endColumns": "12,12,12,12,12,12,12",
-                        "endOffsets": "2203,2363,2486,2612,3065,3194,3343"
+                        "endOffsets": "2305,2465,2588,2714,3167,3296,3445"
                     }
                 },
                 {
@@ -76,18 +76,18 @@
                 {
                     "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "3,2,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "104,56,158",
-                        "endColumns": "52,46,52",
-                        "endOffsets": "152,98,206"
+                        "startLines": "3,2,4,6,5",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "105,57,159,262,213",
+                        "endColumns": "52,46,52,53,47",
+                        "endOffsets": "153,99,207,311,256"
                     },
                     "to": {
-                        "startLines": "38,39,40",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1764,1817,1864",
-                        "endColumns": "52,46,52",
-                        "endOffsets": "1812,1859,1912"
+                        "startLines": "38,39,40,41,42",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1764,1817,1864,1917,1971",
+                        "endColumns": "52,46,52,53,47",
+                        "endOffsets": "1812,1859,1912,1966,2014"
                     }
                 }
             ]

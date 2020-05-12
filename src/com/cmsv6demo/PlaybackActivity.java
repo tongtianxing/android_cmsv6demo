@@ -24,7 +24,10 @@ public class PlaybackActivity extends Activity {
 	private Button mBtnStart;
 	private Button mBtnStop; 
 	private String mDevIdno;
-	
+
+	private boolean mIsDirect;
+	private String mServer;
+	private  int mPort;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,6 +60,12 @@ public class PlaybackActivity extends Activity {
 		if (intent.hasExtra("DevIDNO")) {
 			mDevIdno = intent.getStringExtra("DevIDNO");
 		}
+		mIsDirect = intent.getBooleanExtra("direct", false);
+		if(mIsDirect){
+			mServer = intent.getStringExtra("serverIp");
+			mPort = intent.getIntExtra("port", 0);
+			mDevIdno = intent.getStringExtra("devIdno");
+		}
 		StartPlayback();
 	}
 
@@ -81,6 +90,9 @@ public class PlaybackActivity extends Activity {
 			int nLength = intent.getIntExtra("Length", 0);
 			int nChannel = intent.getIntExtra("Channel", 0);
 			mPlayback.setPlayerDevIdno(mDevIdno);
+			if(mIsDirect){
+				mPlayback.setLanInfo(mServer, mPort);
+			}
 			mPlayback.StartVod(file, nLength, nChannel);
 			//mIsPlaying = false;
 			mIsPlaying = true;

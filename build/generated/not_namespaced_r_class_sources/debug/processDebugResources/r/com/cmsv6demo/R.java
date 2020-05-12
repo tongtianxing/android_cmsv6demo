@@ -130,10 +130,21 @@ public final class R {
     public static final int input_shade_white=0x7f040006;
     public static final int list_nodata=0x7f040007;
     public static final int list_refresh=0x7f040008;
-    public static final int mainsetting_dialog_frame=0x7f040009;
-    public static final int my_progress_drawable=0x7f04000a;
-    public static final int pic_error_net_bad=0x7f04000b;
-    public static final int title_bk=0x7f04000c;
+    public static final int main_toolbar_bg=0x7f040009;
+    public static final int mainsetting_dialog_frame=0x7f04000a;
+    public static final int my_progress_drawable=0x7f04000b;
+    public static final int pic_error_net_bad=0x7f04000c;
+    public static final int tab_indicator=0x7f04000d;
+    public static final int tab_selected=0x7f04000e;
+    public static final int tab_unselected=0x7f04000f;
+    public static final int title_bk=0x7f040010;
+    public static final int toolbar_playback_hover=0x7f040011;
+    public static final int toolbar_playback_hover_ex=0x7f040012;
+    public static final int toolbar_playback_normal=0x7f040013;
+    public static final int toolbar_select_playback=0x7f040014;
+    public static final int toolbar_select_video=0x7f040015;
+    public static final int toolbar_video_hover=0x7f040016;
+    public static final int toolbar_video_normal=0x7f040017;
   }
   public static final class id {
     public static final int action_settings=0x7f050000;
@@ -191,12 +202,14 @@ public final class R {
     public static final int ly_control=0x7f050034;
     public static final int ly_devidno=0x7f050035;
     public static final int ly_ipaddr=0x7f050036;
-    public static final int track_textview_title=0x7f050037;
-    public static final int tvStatus=0x7f050038;
-    public static final int tv_devidno=0x7f050039;
-    public static final int tv_monitor=0x7f05003a;
-    public static final int tv_server=0x7f05003b;
-    public static final int tv_talkback=0x7f05003c;
+    public static final int toolbar_icon=0x7f050037;
+    public static final int toolbar_title=0x7f050038;
+    public static final int track_textview_title=0x7f050039;
+    public static final int tvStatus=0x7f05003a;
+    public static final int tv_devidno=0x7f05003b;
+    public static final int tv_monitor=0x7f05003c;
+    public static final int tv_server=0x7f05003d;
+    public static final int tv_talkback=0x7f05003e;
   }
   public static final class layout {
     public static final int activity_main=0x7f060000;
@@ -208,7 +221,9 @@ public final class R {
     public static final int devsearch_list=0x7f060006;
     public static final int devsearch_list_item=0x7f060007;
     public static final int list_content=0x7f060008;
-    public static final int playback_list_item=0x7f060009;
+    public static final int main=0x7f060009;
+    public static final int playback_list_item=0x7f06000a;
+    public static final int tab_indicator=0x7f06000b;
   }
   public static final class menu {
     public static final int main=0x7f070000;
@@ -217,6 +232,8 @@ public final class R {
     public static final int action_settings=0x7f080000;
     public static final int app_name=0x7f080001;
     public static final int hello_world=0x7f080002;
+    public static final int toolbar_playback=0x7f080003;
+    public static final int toolbar_video=0x7f080004;
   }
   public static final class style {
     public static final int AppBaseTheme=0x7f090000;

@@ -4,6 +4,10 @@
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-hdpi\\pic_error_net_bad.png"
     },
     {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\main.xml"
+    },
+    {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_activity_playback.xml.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\activity_playback.xml"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_custommenu_pressed_selector.xml.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\custommenu_pressed_selector.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_tab_indicator.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\tab_indicator.xml"
     },
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
@@ -32,6 +40,10 @@
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_tab_indicator.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\tab_indicator.xml"
+    },
+    {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_my_progress_drawable.xml.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\my_progress_drawable.xml"
     },
@@ -40,8 +52,24 @@
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\devsearch_list.xml"
     },
     {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_toolbar_video_hover.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\toolbar_video_hover.png"
+    },
+    {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_mainsetting_dialog_frame.xml.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\mainsetting_dialog_frame.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_toolbar_select_playback.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\toolbar_select_playback.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_main_toolbar_bg.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\main_toolbar_bg.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_toolbar_playback_hover_ex.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\toolbar_playback_hover_ex.png"
     },
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_list_refresh.png.flat",
@@ -56,16 +84,28 @@
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\activity_record.xml"
     },
     {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_toolbar_video_normal.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\toolbar_video_normal.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_tab_selected.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\tab_selected.png"
+    },
+    {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_custom_menu_item.xml.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\custom_menu_item.xml"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_playback_list_item.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\playback_list_item.xml"
     },
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_grid_bg.png.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\grid_bg.png"
     },
     {
-        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\layout_playback_list_item.xml.flat",
-        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\layout\\playback_list_item.xml"
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_toolbar_select_video.xml.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\toolbar_select_video.xml"
     },
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_title_bk.png.flat",
@@ -76,12 +116,20 @@
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_toolbar_playback_normal.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\toolbar_playback_normal.png"
+    },
+    {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_device_live.png.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\device_live.png"
     },
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_toolbar_playback_hover.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable-xhdpi\\toolbar_playback_hover.png"
     },
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_list_nodata.png.flat",
@@ -98,6 +146,10 @@
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_cam_default.png.flat",
         "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\cam_default.png"
+    },
+    {
+        "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_tab_unselected.png.flat",
+        "source": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\res\\drawable\\tab_unselected.png"
     },
     {
         "merged": "E:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\res\\merged\\debug\\drawable_bg_item_selector.xml.flat",

@@ -59,7 +59,12 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 	private SearchRunnable mSearchRunnable = new SearchRunnable();
 	private List<DeviceSearch> mSearchList = new ArrayList<DeviceSearch>();
 	private DeviceSearch mSelectDevice;
-	
+
+	private List<VehicleInfo> lstVehicle = new ArrayList<VehicleInfo>();
+	private List<String> lstDevIdnos = new ArrayList<String>();
+	private Map<String, VehicleInfo> mapVehiInfoWithVehiIdno = new HashMap<String, VehicleInfo>();
+	private Map<String, VehicleInfo> mapVehiInfoWithDevIdno = new HashMap<String, VehicleInfo>();
+	private Map<Integer, VehicleTeam> mapVehiTeam = new HashMap<Integer, VehicleTeam>();
 	public Activity getActivity() {
 		return DeviceSearchActivity.this;
 	}
@@ -109,6 +114,22 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 	protected void onDestroy() {
 		super.onDestroy();
 		stopSearch();
+		if(lstVehicle != null){
+			lstVehicle.clear();
+		}
+		if(lstDevIdnos != null){
+			lstDevIdnos.clear();
+		}
+
+		if(mapVehiInfoWithVehiIdno != null){
+			mapVehiInfoWithVehiIdno.clear();
+		}
+		if(mapVehiInfoWithDevIdno != null){
+			mapVehiInfoWithDevIdno.clear();
+		}
+		if(mapVehiTeam != null){
+			mapVehiTeam.clear();
+		}
 	}
 	
 	final class TitleTouchListener implements OnTouchListener{
@@ -251,7 +272,7 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 			mSearchHandle = NetClient.SDOpenSearch();
 			mSearchList.clear();
 			NetClient.SDStartSearch(mSearchHandle, "", NetClient.SEARCH_DEFAULT_PORT);
-			mMyHandler.postDelayed(mSearchRunnable, 200);
+			mMyHandler.postDelayed(mSearchRunnable, 2000);
 		}
 	}
 	
@@ -261,6 +282,7 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 			NetClient.SDCloseSearch(mSearchHandle);
 			mMyHandler.removeCallbacks(mSearchRunnable);
 			mSearchHandle = 0;
+
 		}
 	}
 	
@@ -330,7 +352,7 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 	 */
 	protected void updateVehicleInfo() {
 		int i = 0;
-		Map<Integer, VehicleTeam> mapVehiTeam = new HashMap<Integer, VehicleTeam>();
+
 		VehicleTeam team = new VehicleTeam();
 		team.setCompanyId(0);
 		team.setLevel(1);
@@ -339,10 +361,7 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 		team.setParentId(0);
 		mapVehiTeam.put(team.getId(), team);
 		
-		List<VehicleInfo> lstVehicle = new ArrayList<VehicleInfo>();
-		List<String> lstDevIdnos = new ArrayList<String>();
-		Map<String, VehicleInfo> mapVehiInfoWithVehiIdno = new HashMap<String, VehicleInfo>();
-		Map<String, VehicleInfo> mapVehiInfoWithDevIdno = new HashMap<String, VehicleInfo>();
+
 		for (i = 0; i < mSearchList.size(); ++ i) {
 			DeviceSearch device = mSearchList.get(i);
 			VehicleInfo vehicleInfo = new VehicleInfo();
@@ -370,7 +389,6 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 			List<StandardDeviceInfo> lstDevice = new ArrayList<StandardDeviceInfo>();
 			lstDevice.add(deviceInfo);
 			vehicleInfo.setLstDevice(lstDevice);
-		
 			mapVehiInfoWithDevIdno.put(deviceInfo.getDevIDNO(), vehicleInfo);
 			mapVehiInfoWithVehiIdno.put(vehicleInfo.getVehiIDNO(), vehicleInfo);
 			lstVehicle.add(vehicleInfo);
@@ -417,12 +435,16 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 		gViewerApp.setDirectUrl("http://" + mSelectDevice.getIpAddr() + ":" + mSelectDevice.getWebPort() + "/" + mSelectDevice.getWebUrl());
 		localIntent.setClass(DeviceSearchActivity.this, MainActivity.class);
 		startActivityForResult(localIntent, 1);*/
-		
-		Intent localIntent = new Intent();
-		localIntent.putExtra("serverIp", mSelectDevice.getIpAddr());
-		localIntent.putExtra("devIdno", mSelectDevice.getDevIdno());		
-		localIntent.setClass(DeviceSearchActivity.this, PreviewActivity.class);
-		startActivityForResult(localIntent, 2);
+		VehicleInfo vehicleInfo = mapVehiInfoWithDevIdno.get(mSelectDevice.getDevIdno());
+		if(vehicleInfo != null){
+			Intent localIntent = new Intent();
+			localIntent.putExtra("serverIp", vehicleInfo.getVideoLanIp());
+			localIntent.putExtra("port", vehicleInfo.getVideoLanPort());
+			localIntent.putExtra("devIdno", mSelectDevice.getDevIdno());
+			localIntent.setClass(DeviceSearchActivity.this, MainDirectActivity.class);
+			startActivityForResult(localIntent, 2);
+		}
+
 	}
 	
 	/*protected void deviceParamSetting() {

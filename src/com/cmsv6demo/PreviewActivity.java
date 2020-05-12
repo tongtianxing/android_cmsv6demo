@@ -37,8 +37,9 @@ public class PreviewActivity extends Activity {
 	
 	private Button mBtnMonitorStart;
 	private Button mBtnMonitorStop;
-	
-	
+
+	private boolean mIsDirect;
+	private int mPort;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -73,8 +74,9 @@ public class PreviewActivity extends Activity {
 		NetClient.Initialize("/mnt/sdcard/");
 		Intent intent = getIntent();
 		mServer = intent.getStringExtra("serverIp");
+		mPort = intent.getIntExtra("port", 0);
 		mDevIdno = intent.getStringExtra("devIdno");
-		
+		mIsDirect = intent.getBooleanExtra("direct", false);
 		if (!updateServer()) {
 			return ;
 		}
@@ -106,8 +108,8 @@ public class PreviewActivity extends Activity {
 		if (!mIsStartAV) {
 			
 			///直连播放
-			mRealPlay1.setLanInfo(mServer, 6688);
-			mRealPlay2.setLanInfo(mServer, 6688);
+			mRealPlay1.setLanInfo(mServer, mPort);
+			mRealPlay2.setLanInfo(mServer, mPort);
 			mRealPlay1.setViewInfo(mDevIdno, mDevIdno, 0, "CH1");
 	       	mRealPlay2.setViewInfo(mDevIdno, mDevIdno, 1, "CH2");
 	      //是否铺满画面 true 是  false否

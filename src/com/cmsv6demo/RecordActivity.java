@@ -25,20 +25,22 @@ import com.babelstar.gviewer.NetClient;
 //import com.cmsv6demo.MainActivity.PlayClickListener;
 import com.cmsv6demo.RecordListAdapter.PlaybackItemClick;
 
+import net.babelstar.cmsv6demo.model.bd808.VehicleInfo;
+
 public class RecordActivity extends Activity {
 	private ListView mLstRecord;
 	private String mDevIdno;
-	
 	private Button mBtnStart;
 	private Button mBtnStop; 
-	private TextView mTvStatus; 
-	
+	private TextView mTvStatus;
 	private Handler mHandler = new Handler();
 	private List<RecordFile> mFileList = new ArrayList<RecordFile>();
 	private long mSearchHandle = 0;
 	private SearchRunnable mSearchRunnable = new SearchRunnable();
 	private RecordListAdapter mSearchAdapter;
-
+	private boolean mIsDirect;
+	private String mServer;
+	private  int mPort;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -56,6 +58,11 @@ public class RecordActivity extends Activity {
 				intent.putExtra("Length", mFileList.get(arg2).getOrginalLen());
 				intent.putExtra("Channel", mFileList.get(arg2).getChn());
 
+				intent.putExtra("serverIp", mServer);
+				intent.putExtra("port", mPort);
+				intent.putExtra("direct", true);
+				intent.putExtra("devIdno", mDevIdno);
+
 				intent.setClass(RecordActivity.this, PlaybackActivity.class);
 				startActivityForResult(intent, 0);
             }  
@@ -71,8 +78,15 @@ public class RecordActivity extends Activity {
 		mBtnStop.setOnClickListener(playClickListen);
 		
 		Intent intent = getIntent();
+
 		if (intent.hasExtra("DevIDNO")) {
 			mDevIdno = intent.getStringExtra("DevIDNO");
+		}
+		mIsDirect = intent.getBooleanExtra("direct", false);
+		if(mIsDirect){
+			mServer = intent.getStringExtra("serverIp");
+			mPort = intent.getIntExtra("port", 0);
+			mDevIdno = intent.getStringExtra("devIdno");
 		}
 		startSearch();
 	}
@@ -107,6 +121,7 @@ public class RecordActivity extends Activity {
 			Calendar cal = Calendar.getInstance();
 			//设备端录像搜索
 			//Device video search
+
 			mSearchHandle = NetClient.SFOpenSrchFile(mDevIdno, NetClient.GPS_FILE_LOCATION_DEVICE, NetClient.GPS_FILE_ATTRIBUTE_RECORD);
 			//存储服务器录像搜索（依据设备"车牌号"，如下）
 			//storageServer video search（According to the license plate number）
@@ -115,13 +130,20 @@ public class RecordActivity extends Activity {
 			mFileList.clear();
 			//NetClient.SFStartSearchFile(mSearchHandle,2012, 12, 23, NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
 			//NetClient.SFStartSearchFile(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
-			
-			NetClient.SFStartSearchFileEx(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), 
-					cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), 
-					NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400, NetClient.GPS_FILE_LOCATION_DEVICE, 0, NetClient.GPS_MEDIA_TYPE_AUDIO_VIDEO, 
-					NetClient.GPS_STREAM_TYPE_MAIN_SUB, NetClient.GPS_MEMORY_TYPE_MAIN_SUB, 0, 0, 0);
+			if(mIsDirect){
+
+				NetClient.SFSetRealServer(mSearchHandle, mServer, mPort, "");
+				NetClient.SFStartSearchFile(mSearchHandle,cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1,  cal.get(Calendar.DAY_OF_MONTH), NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
+			}else{
+				NetClient.SFStartSearchFileEx(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
+						cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
+						NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400, NetClient.GPS_FILE_LOCATION_DEVICE, 0, NetClient.GPS_MEDIA_TYPE_AUDIO_VIDEO,
+						NetClient.GPS_STREAM_TYPE_MAIN_SUB, NetClient.GPS_MEMORY_TYPE_MAIN_SUB, 0, 0, 0);
+			}
+
+
 			//NetClient.SFStartSearchFile(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
-			mHandler.postDelayed(mSearchRunnable, 200);
+			mHandler.postDelayed(mSearchRunnable, 2000);
 		}
 	}
 	
