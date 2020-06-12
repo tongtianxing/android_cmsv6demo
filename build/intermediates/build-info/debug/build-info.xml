@@ -5,27 +5,38 @@
     build-mode="FULL"
     density="xxhdpi"
     format="10"
-    ir-eligibility="METHOD_DELETED"
     plugin-version="3.4.1"
-    timestamp="1589276828203"
+    timestamp="1591943193585"
     token="-5243466130602917366"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="399" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="104" />
+        duration="0" />
     <task
         name="verifier"
-        duration="91" />
+        duration="0" />
 
     <artifact
+        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\instant-run-apk\debug\Android_cmsv6demo-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
         location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
         location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -34,13 +45,7 @@
         location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
         location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
         location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -52,22 +57,27 @@
         location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
         location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
-    <artifact
-        location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\instant-run-apk\debug\Android_cmsv6demo-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1589276828203"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1591943193585"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\instant-run-apk\debug\Android_cmsv6demo-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -76,13 +86,7 @@
             location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -94,14 +98,8 @@
             location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
             location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
-        <artifact
-            location="E:\project\mobile\androidstudio\Android_cmsv6demo\build\intermediates\instant-run-apk\debug\Android_cmsv6demo-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
