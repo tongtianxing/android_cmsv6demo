@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ import com.babelstar.gviewer.NetClient;
 import com.cmsv6demo.RecordListAdapter.PlaybackItemClick;
 
 import net.babelstar.cmsv6demo.model.bd808.VehicleInfo;
+import net.babelstar.common.util.PermissionUtils;
 
 public class RecordActivity extends Activity {
 	private ListView mLstRecord;
@@ -88,6 +90,7 @@ public class RecordActivity extends Activity {
 			mPort = intent.getIntExtra("port", 0);
 			mDevIdno = intent.getStringExtra("devIdno");
 		}
+
 		startSearch();
 	}
 

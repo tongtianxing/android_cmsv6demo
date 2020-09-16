@@ -60,6 +60,7 @@ public class PlaybackActivity extends Activity {
 		if (intent.hasExtra("DevIDNO")) {
 			mDevIdno = intent.getStringExtra("DevIDNO");
 		}
+
 		mIsDirect = intent.getBooleanExtra("direct", false);
 		if(mIsDirect){
 			mServer = intent.getStringExtra("serverIp");

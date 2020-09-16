@@ -9,6 +9,9 @@ import net.babelstar.common.play.RealPlay;
 import net.babelstar.common.play.Talkback;
 import net.babelstar.common.play.Monitor;
 import net.babelstar.common.play.VideoView;
+import net.babelstar.common.util.PermissionUtils;
+
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -93,13 +96,18 @@ public class MainActivity extends Activity {
 		//String url = "http://218.100.210.10:8088/LoginAction_loginMobile.action?update=gViewerAndroid&server=login&userAccount=admin&password=admin";	
 		//AsyncHttpClient.sendRequest(this, url, null, new LoginResponseListener());
 		mPreferences = getSharedPreferences("com.cmsv6demo", 0);
+		//demo测试录像回放时候手动apk打开音频，存储，读写权限
+		String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE,
+				Manifest.permission.READ_PHONE_STATE, Manifest.permission.RECORD_AUDIO};
+		PermissionUtils.getInstance().chekPermissions(MainActivity.this, permissions, permissionsResult);
+
         String server = mPreferences.getString("Server", "192.168.1.230");
         server = "39.108.194.249";
         //server = "47.105.162.81";
         mEtServer.setText(server);
         String devIdno = mPreferences.getString("DevIDNO", "50003");
         //devIdno = "100012";
-        devIdno = "1423";
+        devIdno = "10006";
        	mEtDevIdno.setText(devIdno);
         String sdPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/";
 //		NetClient.Initialize("/mnt/sdcard/");
@@ -302,4 +310,22 @@ public class MainActivity extends Activity {
 			}
 		}
 	}
+	//创建监听权限的接口对象
+	PermissionUtils.IPermissionsResult permissionsResult = new PermissionUtils.IPermissionsResult(){
+
+		//@Override
+		public void passPermissons() {
+			// TODO Auto-generated method stub
+			//Toast.makeText(getActivity(), R.string.toast_permission_go_through, Toast.LENGTH_SHORT).show();
+		}
+
+		//@Override
+		public void forbitPermissons() {
+			// TODO Auto-generated method stub
+			//Toast.makeText(LoginActivity.this, R.string.toast_permission_no_through, Toast.LENGTH_SHORT).show();
+		}
+
+
+	};
+
 }

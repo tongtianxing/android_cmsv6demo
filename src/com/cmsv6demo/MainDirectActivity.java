@@ -1,4 +1,5 @@
 package com.cmsv6demo;
+import android.Manifest;
 import android.app.TabActivity;
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +13,8 @@ import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
+
+import net.babelstar.common.util.PermissionUtils;
 
 
 //import android.os.Environment;
@@ -39,7 +42,7 @@ public class MainDirectActivity extends TabActivity {
 		mTabHost.setup();
 		LinearLayout layout = (LinearLayout)mTabHost.getChildAt(0);
 		TabWidget tw = (TabWidget)layout.getChildAt(1);
-
+		mContext = getApplicationContext();
 		Intent intent = getIntent();
 		serverIp = intent.getStringExtra("serverIp");
 		devId = intent.getStringExtra("devIdno");
@@ -64,6 +67,7 @@ public class MainDirectActivity extends TabActivity {
 		index ++;
 		mTabHost.setOnTabChangedListener(new TabHostChangeListener());
 		mTabHost.setCurrentTab(TAB_INDEX_PREVIEW);
+
 
 
 	}
