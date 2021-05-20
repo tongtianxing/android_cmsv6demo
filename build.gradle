@@ -16,6 +16,8 @@ allprojects {
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
+    api 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 
 }
 
@@ -28,7 +30,7 @@ android {
 
         applicationId "com.cmsv6demo"//应用程序的包名
 
-        minSdkVersion 11//支持的最低版本
+        minSdkVersion 14//支持的最低版本
 
         targetSdkVersion 28//支持的目标版本
 

@@ -1,4 +1,4 @@
-#Fri Jun 12 14:30:30 CST 2020
-base.0=E\:\\project\\mobile\\androidstudio\\Android_cmsv6demo\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Thu May 20 16:25:22 CST 2021
+base.0=D\:\\work\\ttx\\android\\ASProject\\Android_cmsv6demo\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex

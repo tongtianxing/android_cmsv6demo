@@ -7,6 +7,8 @@ import net.babelstar.common.play.VideoView;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.os.Bundle;
 //import android.os.Environment;
 import android.view.Menu;
@@ -69,6 +71,8 @@ public class PreviewActivity extends Activity {
 		mRealPlay1 = new RealPlay(this);
 		mRealPlay2 = new RealPlay(this);
 		mRealPlay1.setVideoView(mVideoImage1);
+
+
 		mRealPlay2.setVideoView(mVideoImage2);		
 		         
 		NetClient.Initialize("/mnt/sdcard/");

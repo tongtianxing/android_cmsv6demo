@@ -43,6 +43,7 @@ public class RecordActivity extends Activity {
 	private boolean mIsDirect;
 	private String mServer;
 	private  int mPort;
+	private int mStorageType; //1:设备录像 2:存储服务器录像  4：下载服务器
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -124,8 +125,8 @@ public class RecordActivity extends Activity {
 			Calendar cal = Calendar.getInstance();
 			//设备端录像搜索
 			//Device video search
-
-			mSearchHandle = NetClient.SFOpenSrchFile(mDevIdno, NetClient.GPS_FILE_LOCATION_DEVICE, NetClient.GPS_FILE_ATTRIBUTE_RECORD);
+			mStorageType = NetClient.GPS_FILE_LOCATION_DEVICE;
+			mSearchHandle = NetClient.SFOpenSrchFile(mDevIdno, mStorageType, NetClient.GPS_FILE_ATTRIBUTE_RECORD);
 			//存储服务器录像搜索（依据设备"车牌号"，如下）
 			//storageServer video search（According to the license plate number）
 //			mSearchHandle = NetClient.SFOpenSrchFile("4429-HY", NetClient.GPS_FILE_LOCATION_STOSVR, NetClient.GPS_FILE_ATTRIBUTE_RECORD);
@@ -138,10 +139,19 @@ public class RecordActivity extends Activity {
 				NetClient.SFSetRealServer(mSearchHandle, mServer, mPort, "");
 				NetClient.SFStartSearchFile(mSearchHandle,cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1,  cal.get(Calendar.DAY_OF_MONTH), NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
 			}else{
-				NetClient.SFStartSearchFileEx(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
-						cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
-						NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400, NetClient.GPS_FILE_LOCATION_DEVICE, 0, NetClient.GPS_MEDIA_TYPE_AUDIO_VIDEO,
-						NetClient.GPS_STREAM_TYPE_MAIN_SUB, NetClient.GPS_MEMORY_TYPE_MAIN_SUB, 0, 0, 0);
+
+				//1078设备
+				boolean is1078 = false;
+
+				if(is1078){
+					NetClient.SFStartSearchFileEx(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
+							cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
+							NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400, NetClient.GPS_FILE_LOCATION_DEVICE, 0, NetClient.GPS_MEDIA_TYPE_AUDIO_VIDEO,
+							NetClient.GPS_STREAM_TYPE_MAIN_SUB, NetClient.GPS_MEMORY_TYPE_MAIN_SUB, 0, 0, 0);
+				}else{
+					NetClient.SFStartSearchFile(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
+				}
+
 			}
 
 
@@ -182,10 +192,24 @@ public class RecordActivity extends Activity {
 						
 						RecordFile search = new RecordFile();
 						search.setOrginalFileInfo(result, i);
-						
+
 						search.setFileInfo(fileInfo);
 						int index = 0;
+						//确保发送过来的数据包含了设备id 如果没有手动添加设置
+//						if(mStorageType == 1){
+//							if(info[index ++].isEmpty()){
+//								search.setDevIdno(mDevIdno);
+//							}else{
+//								search.setDevIdno(info[index ++]);
+//							}
+//
+//						}else {
+//							index ++; //这个是设备id
+//							search.setDevIdno(mDevIdno);
+//						}
+//						index ++; //这个是设备id
 						search.setDevIdno(mDevIdno);
+//						search.setDevIdno(mDevIdno);
 						search.setName(info[index ++]);
 						search.setYear(Integer.parseInt(info[index ++]));
 						search.setMonth(Integer.parseInt(info[index ++]));
