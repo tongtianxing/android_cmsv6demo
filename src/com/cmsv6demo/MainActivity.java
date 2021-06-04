@@ -102,12 +102,12 @@ public class MainActivity extends Activity {
 		PermissionUtils.getInstance().chekPermissions(MainActivity.this, permissions, permissionsResult);
 
         String server = mPreferences.getString("Server", "192.168.1.230");
-        //server = "39.108.194.249";
-        server = "103.237.144.141";
+        server = "39.108.194.249";
+        //server = "103.237.144.141";
         mEtServer.setText(server);
         String devIdno = mPreferences.getString("DevIDNO", "50003");
         //devIdno = "100012";
-        devIdno = "2957177";
+        devIdno = "0010006";
        	mEtDevIdno.setText(devIdno);
         String sdPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/";
 //		NetClient.Initialize("/mnt/sdcard/");
