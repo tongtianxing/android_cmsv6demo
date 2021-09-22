@@ -51,7 +51,7 @@ public class RecordListAdapter extends CustomBaseAdapter<RecordFile> {
 		viewHolder.tvTime.setText(file.getFileTime());
 		viewHolder.tvType.setText(file.getDevIdno() + " " + (file.getChn() + 1) + "   " + RecordFile.sGetFileTypeRsID(file.getFileType()));
 		
-		if (file.getFileType() == NetClient.GPS_FILE_TYPE_ALARM) {
+		if (file.getFileType() == MainActivity.GPS_FILE_TYPE_ALARM) {
 			viewHolder.tvType.setTextColor(Color.RED);
 			viewHolder.tvTime.setTextColor(Color.RED);
 		} else {

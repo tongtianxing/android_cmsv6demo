@@ -63,8 +63,13 @@ public class RecordActivity extends Activity {
 
 				intent.putExtra("serverIp", mServer);
 				intent.putExtra("port", mPort);
-				intent.putExtra("direct", true);
+				intent.putExtra("direct", mIsDirect);
 				intent.putExtra("devIdno", mDevIdno);
+
+				intent.putExtra("fileType", mFileList.get(arg2).getFileType());
+				intent.putExtra("date", mFileList.get(arg2).getFileDate());
+				intent.putExtra("time", mFileList.get(arg2).getFileTimeEx());
+
 
 				intent.setClass(RecordActivity.this, PlaybackActivity.class);
 				startActivityForResult(intent, 0);
@@ -125,8 +130,8 @@ public class RecordActivity extends Activity {
 			Calendar cal = Calendar.getInstance();
 			//设备端录像搜索
 			//Device video search
-			mStorageType = NetClient.GPS_FILE_LOCATION_DEVICE;
-			mSearchHandle = NetClient.SFOpenSrchFile(mDevIdno, mStorageType, NetClient.GPS_FILE_ATTRIBUTE_RECORD);
+			mStorageType = MainActivity.GPS_FILE_LOCATION_DEVICE;
+			mSearchHandle = NetClient.SFOpenSrchFile(mDevIdno, mStorageType, MainActivity.GPS_FILE_ATTRIBUTE_RECORD);
 			//存储服务器录像搜索（依据设备"车牌号"，如下）
 			//storageServer video search（According to the license plate number）
 //			mSearchHandle = NetClient.SFOpenSrchFile("4429-HY", NetClient.GPS_FILE_LOCATION_STOSVR, NetClient.GPS_FILE_ATTRIBUTE_RECORD);
@@ -137,7 +142,7 @@ public class RecordActivity extends Activity {
 			if(mIsDirect){
 
 				NetClient.SFSetRealServer(mSearchHandle, mServer, mPort, "");
-				NetClient.SFStartSearchFile(mSearchHandle,cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1,  cal.get(Calendar.DAY_OF_MONTH), NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
+				NetClient.SFStartSearchFile(mSearchHandle,cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1,  cal.get(Calendar.DAY_OF_MONTH), MainActivity.GPS_FILE_TYPE_ALL, 0, 0, 86400);
 			}else{
 
 				//1078设备
@@ -146,10 +151,10 @@ public class RecordActivity extends Activity {
 				if(is1078){
 					NetClient.SFStartSearchFileEx(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
 							cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH),
-							NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400, NetClient.GPS_FILE_LOCATION_DEVICE, 0, NetClient.GPS_MEDIA_TYPE_AUDIO_VIDEO,
-							NetClient.GPS_STREAM_TYPE_MAIN_SUB, NetClient.GPS_MEMORY_TYPE_MAIN_SUB, 0, 0, 0);
+							MainActivity.GPS_FILE_TYPE_ALL, 0, 0, 86400, MainActivity.GPS_FILE_LOCATION_DEVICE, 0, MainActivity.GPS_MEDIA_TYPE_AUDIO_VIDEO,
+							MainActivity.GPS_STREAM_TYPE_MAIN_SUB, MainActivity.GPS_MEMORY_TYPE_MAIN_SUB, 0, 0, 0);
 				}else{
-					NetClient.SFStartSearchFile(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), NetClient.GPS_FILE_TYPE_ALL, 0, 0, 86400);
+					NetClient.SFStartSearchFile(mSearchHandle, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH), MainActivity.GPS_FILE_TYPE_ALL, 0, 0, 86400);
 				}
 
 			}
@@ -177,7 +182,7 @@ public class RecordActivity extends Activity {
 					byte[] result = new byte[1024];
 					java.util.Arrays.fill(result, (byte)0);
 					int ret = NetClient.SFGetSearchFile(mSearchHandle, result, 1024);
-					if (ret == NetClient.NET_SUCCESS) {
+					if (ret == MainActivity.NET_SUCCESS) {
 						int i = 0;
 						for (i = 0; i < result.length; ++ i) {
 							if (result[i] == 0) {
@@ -234,7 +239,7 @@ public class RecordActivity extends Activity {
 						mFileList.add(search);
 						continue;
 					}
-					else if (ret == NetClient.SEARCH_FINISHED) {						
+					else if (ret == MainActivity.SEARCH_FINISHED) {
 						if(mFileList.size() > 0){
 							Collections.sort(mFileList, new Comparator<RecordFile>(){
 								@Override
@@ -263,7 +268,7 @@ public class RecordActivity extends Activity {
 						}
 						break;
 					} 
-					else if (ret == NetClient.SEARCH_FAILED) {
+					else if (ret == MainActivity.SEARCH_FAILED) {
 						isFinished = true;
 						cancelSearch();
 						Toast.makeText(getApplicationContext(), "Search Finished", Toast.LENGTH_SHORT).show(); 

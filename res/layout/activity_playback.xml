@@ -14,5 +14,10 @@
 	    <Button android:textSize="18.0sp" android:id="@+id/btnStop"
 	        android:layout_width="90.0dip" android:layout_height="40.0dip"
 	        android:singleLine="true" android:text="Stop" android:layout_toRightOf="@id/btnStart"/>
+
+
+		<Button android:textSize="18.0sp" android:id="@+id/btndownload"
+			android:layout_width="90.0dip" android:layout_height="40.0dip"
+			android:singleLine="true" android:text="download" android:layout_toRightOf="@id/btnStop"/>
 	</RelativeLayout>
 </RelativeLayout>

@@ -271,7 +271,7 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 		if (0 == mSearchHandle) {
 			mSearchHandle = NetClient.SDOpenSearch();
 			mSearchList.clear();
-			NetClient.SDStartSearch(mSearchHandle, "", NetClient.SEARCH_DEFAULT_PORT);
+			NetClient.SDStartSearch(mSearchHandle, "", 6688);
 			mMyHandler.postDelayed(mSearchRunnable, 2000);
 		}
 	}
@@ -294,7 +294,7 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 					byte[] result = new byte[1024];
 					java.util.Arrays.fill(result, (byte)0);
 					int ret = NetClient.SDGetSearchResult(mSearchHandle, result, 1024);
-					if (ret == NetClient.NET_SUCCESS) {
+					if (ret == MainActivity.NET_SUCCESS) {
 						int i = 0;
 						for (i = 0; i < result.length; ++ i) {
 							if (result[i] == 0) {
@@ -327,7 +327,7 @@ public class DeviceSearchActivity extends Activity implements SearchItemClick, W
 						mSearchList.add(search);
 						continue;
 					}
-					else if (ret == NetClient.SEARCH_FINISHED) {
+					else if (ret == MainActivity.SEARCH_FINISHED) {
 						isFinished = true;
 						if (mSearchList.size() > 0) {
 							onListLoadSuccess(false);

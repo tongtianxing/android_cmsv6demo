@@ -183,11 +183,18 @@ public class RecordFile {
 		return String.format("%04d-%02d-%02d    %s - %s", getYear(), getMonth(), getDay()
 				, formatSecond2Time(beginTime), formatSecond2Time(endTime));
 	}
+
+	public String getFileDate() {
+		return String.format("%04d-%02d-%02d", getYear(), getMonth(), getDay());
+	}
+	public String getFileTimeEx() {
+		return String.format("%s-%s", formatSecond2Time(beginTime), formatSecond2Time(endTime));
+	}
 	
 	static public String sGetFileTypeRsID(int fileType) {
-		if (fileType == NetClient.GPS_FILE_TYPE_ALL) {
+		if (fileType == MainActivity.GPS_FILE_TYPE_ALL) {
 			return "All";
-		} else if (fileType == NetClient.GPS_FILE_TYPE_NORMAL) {
+		} else if (fileType == MainActivity.GPS_FILE_TYPE_NORMAL) {
 			return "Normal";
 		} else {
 			return "Alarm";
