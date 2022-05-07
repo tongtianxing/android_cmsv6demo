@@ -1,10 +1,15 @@
 buildscript {
+    ext {
+        kotlin_version = '1.4.32'
+        agp_version = '7.0.3'
+    }
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath "com.android.tools.build:gradle:$agp_version"
+        //classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 apply plugin: 'com.android.application'

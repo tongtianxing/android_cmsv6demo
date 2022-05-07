@@ -189,7 +189,7 @@ public class MainActivity extends Activity {
         mEtServer.setText(server);
         String devIdno = mPreferences.getString("DevIDNO", "50003");
         //devIdno = "100012";
-        devIdno = "1234566618";
+        devIdno = "30001";
        	mEtDevIdno.setText(devIdno);
         String sdPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/";
 //		NetClient.Initialize("/mnt/sdcard/");
